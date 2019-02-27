@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper {
+        width: 100px;
+        background: repeating-linear-gradient(-45deg, lightyellow, lightyellow 10px, yellow 10px, yellow 20px) left;
+        -webkit-background-size: 200% 100%;
+        background-size: 200% 100%;
+        padding: 20px;
+        animation: roll 3s linear infinite;
+    }
+
+    button {
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        border: none;
+        font-size: 16px;
+    }
+
+    @keyframes roll {
+        from {
+            background-position: left;
+        }
+        to {
+            background-position: right;
+        }
+    }
+</style>
+<body>
+<div class="wrapper">
+    <button>查看详情</button>
+</div>
+</body>
+</html>
